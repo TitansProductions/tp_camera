@@ -8,17 +8,8 @@ version '1.0.0'
 
 ui_page 'html/index.html'
 
-server_scripts {
-    'server/*.lua',
-}
-
 client_scripts {
     'client/*.lua',
-}
-
-escrow_ignore {
-    'client/*.lua',
-    'server/*.lua',
 }
 
 files { 'html/**/*' }
