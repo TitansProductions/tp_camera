@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Camera Coordinates</title>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <div id="copycamera">
+
+    <div id="copycamera-dialog">
+
+      <div id="copycamera-title">
+        CAMERA COORDINATES
+      </div>
+
+      <div id="copycamera-description">
+        Copy the current camera position and rotation.
+      </div>
+
+      <textarea id="copycamera-input" readonly></textarea>
+
+      <div id="copycamera-status"></div>
+
+      <div id="copycamera-buttons">
+
+        <button id="copycamera-copy">
+          COPY
+        </button>
+
+        <button id="copycamera-close">
+          CLOSE
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
