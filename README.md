@@ -76,13 +76,11 @@ ensure your_resource_name
 * RedM
 * No external dependencies
 
-## Credits
+## Screenshots
 
-**Titans Productions**
+<img width="1544" height="972" alt="εικόνα" src="https://github.com/user-attachments/assets/552535ee-7aae-4f30-a2f9-a66cea2e181d" />
+<img width="1651" height="1071" alt="εικόνα" src="https://github.com/user-attachments/assets/04aa1ae7-01d0-4562-8b51-f80066fa78db" />
 
-Created by **Nosmakos**.
-
----
 
 ### License
 
