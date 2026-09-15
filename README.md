@@ -2,6 +2,8 @@
 
 A lightweight and simple free-camera utility for **RedM** that allows developers and server administrators to freely move around the world, adjust the camera orientation, and quickly copy camera coordinates for use in scripts, maps, scenes, and development.
 
+## DO NOT USE THE SCRIPT ON LIVE-SERVERS PERMANENTLY, ENSURE THE SCRIPT AND USE IT ONLY FOR DEVELOPMENT PURPOSES.
+
 ## Features
 
 * 🎥 Free camera movement
