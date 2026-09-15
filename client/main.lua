@@ -11,18 +11,11 @@ local CameraHandler = {
     zoom = 50.0
 }
 
-AddEventHandler('onResourceStop', function(resourceName)
-    if (GetCurrentResourceName() ~= resourceName) then
-        return
-    end
+-----------------------------------------------------------
+--[[ Local Functions ]]--
+-----------------------------------------------------------
 
-    if CameraHandler.handler then
-        DestroyCam(CameraHandler.handler, true)
-    end
-
-end)
-
-DisplayHelp = function(_message, x, y, w, h, enableShadow, col1, col2, col3, a, centre)
+local function DisplayHelp(_message, x, y, w, h, enableShadow, col1, col2, col3, a, centre)
 
 	local str = CreateVarString(10, "LITERAL_STRING", _message, Citizen.ResultAsLong())
 
@@ -41,7 +34,7 @@ DisplayHelp = function(_message, x, y, w, h, enableShadow, col1, col2, col3, a, 
 
 end
 
-function CheckControls(func, pad, controls)
+local function CheckControls(func, pad, controls)
 	if type(controls) == 'number' then
 		return func(pad, controls)
 	end
@@ -54,6 +47,21 @@ function CheckControls(func, pad, controls)
 
 	return false
 end
+
+-----------------------------------------------------------
+--[[ Base Events ]]--
+-----------------------------------------------------------
+
+AddEventHandler('onResourceStop', function(resourceName)
+    if (GetCurrentResourceName() ~= resourceName) then
+        return
+    end
+
+    if CameraHandler.handler then
+        DestroyCam(CameraHandler.handler, true)
+    end
+
+end)
 
 -----------------------------------------------------------
 --[[ Commands ]]--
