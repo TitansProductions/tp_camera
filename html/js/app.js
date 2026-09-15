@@ -23,19 +23,30 @@ window.addEventListener('message', function (event) {
   }
 });
 
+
+function copyToClipboard(text) {
+  var e = document.createElement('textarea');
+  e.textContent = text;
+  document.body.appendChild(e);
+
+  var selection = document.getSelection();
+  selection.removeAllRanges();
+
+  e.select();
+  document.execCommand('copy');
+
+  selection.removeAllRanges();
+  e.remove();
+}
+
 document.getElementById('copycamera-copy').addEventListener('click', function () {
   const text = copyCameraInput.value;
 
-  navigator.clipboard.writeText(text).then(function () {
-    copyCameraStatus.textContent = 'Coordinates copied.';
-  }).catch(function () {
-    copyCameraInput.focus();
-    copyCameraInput.select();
-    document.execCommand('copy');
+  copyToClipboard(text);
 
-    copyCameraStatus.textContent = 'Coordinates copied.';
-  });
+  copyCameraStatus.textContent = 'Coordinates copied.';
 });
+
 
 document.getElementById('copycamera-close').addEventListener('click', function () {
   copyCamera.style.display = 'none';
