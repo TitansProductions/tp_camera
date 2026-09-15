@@ -41,8 +41,8 @@ Opens the camera coordinate interface and allows the current camera configuratio
 | `S`     | Move backward |
 | `A`     | Move left     |
 | `D`     | Move right    |
-| `SPACE` | Move down     |
-| `SHIFT` | Move up       |
+| `SPACE` | Move up     |
+| `SHIFT` | Move down       |
 | `Mouse` | Rotate camera |
 
 ## Camera Data
