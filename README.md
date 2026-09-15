@@ -40,3 +40,50 @@ Opens the camera coordinate interface and allows the current camera configuratio
 | `W`     | Move forward  |
 | `S`     | Move backward |
 | `A`     | Move left     |
+| `D`     | Move right    |
+| `SPACE` | Move down     |
+| `SHIFT` | Move up       |
+| `Mouse` | Rotate camera |
+
+## Camera Data
+
+The script provides the following values:
+
+* `x` — Camera X coordinate
+* `y` — Camera Y coordinate
+* `z` — Camera Z coordinate
+* `rotx` — Camera pitch
+* `roty` — Camera roll
+* `rotz` — Camera heading/yaw
+* `fov` — Camera field of view
+
+This makes it easy to copy a camera position directly into other scripts or configuration files.
+
+## Installation
+
+1. Download or clone the resource into your RedM resources folder.
+2. Add the resource to your `server.cfg`:
+
+```cfg
+ensure your_resource_name
+```
+
+3. Start your RedM server.
+4. Use `/cameraview` in-game to activate the camera.
+
+## Requirements
+
+* RedM
+* No external dependencies
+
+## Credits
+
+**Titans Productions**
+
+Created by **Nosmakos**.
+
+---
+
+### License
+
+You are free to use and modify this resource according to the terms of the repository license.
